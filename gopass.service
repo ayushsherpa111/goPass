@@ -1,0 +1,11 @@
+[Unit]
+Description=CLI Password manager
+After=network.target
+
+[Service]
+ExecStart=/home/sherpa/workspace/goPass/goPass_d/goPassd
+Restart=on-failure
+RestartSec=60s
+
+[Install]
+WantedBy=multi-user.target
