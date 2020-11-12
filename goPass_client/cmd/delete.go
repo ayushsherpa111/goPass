@@ -29,7 +29,7 @@ import (
 var (
 	deleteCmd = &cobra.Command{
 		Use:   "delete",
-		Short: "Delete a ",
+		Short: "Delete a password with a specific id",
 		Long:  ``,
 		RunE: func(cmd *cobra.Command, args []string) error {
 			if id == 0 {
